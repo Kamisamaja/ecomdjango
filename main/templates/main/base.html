@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    {% include 'main/head.html' %}
+  <body>
+    <!-- Preloader-->
+    <div class="preloader" id="preloader">
+      <div class="spinner-grow text-secondary" role="status">
+        <div class="sr-only">Loading...</div>
+      </div>
+    </div>
+    {% block content %}{% endblock content %}
+    <!-- All JavaScript Files-->
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/waypoints.min.js' %}"></script>
+    <script src="{% static 'js/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'js/jquery.countdown.min.js' %}"></script>
+    <script src="{% static 'js/default/jquery.passwordstrength.js' %}"></script>
+    <script src="{% static 'js/default/dark-mode-switch.js' %}"></script>
+    <script src="{% static 'js/default/no-internet.js' %}"></script>
+    <script src="{% static 'js/default/active.js' %}"></script>
+    <script src="{% static 'js/pwa.js' %}"></script>
+  </body>
+</html>
